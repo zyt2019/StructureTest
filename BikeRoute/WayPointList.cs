@@ -9,7 +9,7 @@ namespace BikeRoute
     public class WayPointList
     {
         LinkedList<WayPoint> route;
-        LinkedListNode<WayPoint> current;
+        private LinkedListNode<WayPoint> current;
         public WayPointList()
         {
             this.route = new LinkedList<WayPoint>();
@@ -25,6 +25,11 @@ namespace BikeRoute
         {
             return this.route.Remove(wayPoint);
         }
+        /// <summary>
+        /// 在某个点前面加路径点
+        /// </summary>
+        /// <param name="wayPoints"></param>
+        /// <param name="before"></param>
         public void InsertWaypointsBefore(List<WayPoint> wayPoints,WayPoint before)
         {
             LinkedListNode<WayPoint> node = this.route.Find(before);
@@ -40,6 +45,10 @@ namespace BikeRoute
                 this.AddWayPoints(wayPoints);
             }
         }
+        /// <summary>
+        /// 开始方法
+        /// </summary>
+        /// <returns></returns>
         public bool StartRoute()
         {
             if (this.route.Count>1)
@@ -50,7 +59,7 @@ namespace BikeRoute
             return false;
         }
 
-        private bool MoveToNextWaypoint()
+        public bool MoveToNextWaypoint()
         {
             if (this.current!=null)
             {
@@ -80,15 +89,15 @@ namespace BikeRoute
 
 
         //描述位置的三个方法
-        private LinkedListNode<WayPoint> StartingLine()
+        public LinkedListNode<WayPoint> StartingLine()
         {
             return this.route.First;
         }
-        private LinkedListNode<WayPoint> FinnishLine()
+        public LinkedListNode<WayPoint> FinnishLine()
         {
             return this.route.Last;
         }
-        private LinkedListNode<WayPoint> CurrentPosition()
+        public LinkedListNode<WayPoint> CurrentPosition()
         {
             return this.current;
         }
