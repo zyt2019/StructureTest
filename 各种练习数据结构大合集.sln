@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "函数式编程初解", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapTest", "HeapTest\HeapTest.csproj", "{B96431B8-5CA0-4A3E-9A44-4E9223A68E1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQlite数据库练习", "SQlite数据库练习\SQlite数据库练习.csproj", "{78F8D279-C9B3-466C-AD24-E5FC93034985}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{B96431B8-5CA0-4A3E-9A44-4E9223A68E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B96431B8-5CA0-4A3E-9A44-4E9223A68E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B96431B8-5CA0-4A3E-9A44-4E9223A68E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
