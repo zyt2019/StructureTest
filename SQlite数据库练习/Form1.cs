@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,22 +19,24 @@ namespace SQlite数据库练习
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            helper.CreateSQlite();
+            
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            helper.CreateTable();
+             
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            helper.InsertData();
+            //插入一条数据
+            string sql = "insert into table1 values(5,'我是谁')";
+            int a= SQliteHelper.ExecuteNonQuery(sql);
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = helper.ShowData();
+             
         }
     }
 }
