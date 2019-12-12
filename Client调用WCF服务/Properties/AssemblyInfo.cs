@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("XML转换练习")]
+[assembly: AssemblyTitle("Client调用WCF服务")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("XML转换练习")]
+[assembly: AssemblyProduct("Client调用WCF服务")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("a4326d67-1f7d-4e85-a37b-7df99ded5b9f")]
+[assembly: Guid("3495b59a-b166-46fb-afd4-6db3bbbbb9cb")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

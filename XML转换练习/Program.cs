@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace XML转换练习
@@ -30,11 +26,15 @@ namespace XML转换练习
         static void Main(string[] args)
         {
             Console.WriteLine((int)DynamicType.DynamicDifferentialSetup);
+            SimTaskObject simTask = new SimTaskObject() { MyProperty = "我的属性" };
+            string sTemp = Tools.ToXML(simTask);
+            Console.WriteLine(sTemp);
             Console.ReadKey();
 
         }
     }
-    public static class Tools {
+    public static class Tools
+    {
         public static string ToXML(this SimTaskObject simTask)
         {
             try
@@ -54,6 +54,7 @@ namespace XML转换练习
     [XmlRoot("SimTask")]
     public class SimTaskObject
     {
+        [XmlElement(ElementName = "aaa")]
         public string MyProperty { get; set; }
     }
 }

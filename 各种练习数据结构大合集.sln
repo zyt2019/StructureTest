@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapTest", "HeapTest\HeapTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQlite数据库练习", "SQlite数据库练习\SQlite数据库练习.csproj", "{78F8D279-C9B3-466C-AD24-E5FC93034985}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client调用WCF服务", "Client调用WCF服务\Client调用WCF服务.csproj", "{3495B59A-B166-46FB-AFD4-6DB3BBBBB9CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78F8D279-C9B3-466C-AD24-E5FC93034985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3495B59A-B166-46FB-AFD4-6DB3BBBBB9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3495B59A-B166-46FB-AFD4-6DB3BBBBB9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3495B59A-B166-46FB-AFD4-6DB3BBBBB9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3495B59A-B166-46FB-AFD4-6DB3BBBBB9CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
